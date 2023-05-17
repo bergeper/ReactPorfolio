@@ -1,0 +1,29 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: v.$navbarprimary;
+  padding: 1.4rem;
+  &__title {
+    padding: 0.5rem;
+    background-color: #d46853;
+    border-radius: 1rem;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    &--item {
+      background-color: #ffc120;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      margin: 0.2rem;
+      list-style-type: none;
+    }
+    &--link {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
