@@ -1,25 +1,43 @@
 @use '../../styles/variables' as v;
 @use '../../styles/mixins';
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: v.$navbarprimary;
-  padding: 1.4rem;
-  &__title {
-    padding: 0.5rem;
-    background-color: #d46853;
-    border-radius: 1rem;
+.closed--menu {
+  position: fixed;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: 0.15rem dotted black;
+  &:hover {
+    background-color: yellow;
   }
-  &__menu {
+}
+
+.open--menu {
+  position: fixed;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: 0.15rem dotted black;
+  background-color: #e8e2a9;
+  &:hover {
+    background-color: yellow;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  &__list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     &--item {
-      background-color: #ffc120;
-      border-radius: 1rem;
+      border: 0.15rem dotted black;
+      background-color: #e8e2a9;
       padding: 0.5rem;
       margin: 0.2rem;
       list-style-type: none;
+      &:hover {
+        background-color: yellow;
+      }
     }
     &--link {
       text-decoration: none;
