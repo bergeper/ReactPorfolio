@@ -1,5 +1,9 @@
 import { useState } from 'react';
-import './Navigation.scss';
+import { MenuButton } from '../styled/Menu/MenuButton';
+import { Menu } from '../styled/Menu/Menu';
+import { MenuList } from '../styled/Menu/MenuList';
+import { MenuItem } from '../styled/Menu/MenuItem';
+import { MenuLink } from '../styled/Menu/MenuLink';
 
 export const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -17,40 +21,29 @@ export const Navigation = () => {
 
   return (
     <>
-      <button
-        onClick={showMenu}
-        className={menuOpen ? 'open--menu' : 'closed--menu'}
-      >
-        {menuOpen ? 'Close Menu' : 'Open Menu'}
-      </button>
-      <nav className='menu'>
+      <MenuButton onClick={showMenu}>
+        {menuOpen ? 'Close Menu' : 'Menu'}
+      </MenuButton>
+      <Menu>
         {toggleMenu ? (
-          <ul className='menu__list'>
-            <li className='menu__list--item'>
-              <a className='menu__list--link' href='#hero'>
-                Home
-              </a>
-            </li>
-            <li className='menu__list--item'>
-              <a className='menu__list--link' href='#projects'>
-                Projects
-              </a>
-            </li>
-            <li className='menu__list--item'>
-              <a className='menu__list--link' href='#about'>
-                About
-              </a>
-            </li>
-            <li className='menu__list--item'>
-              <a className='menu__list--link' href='#contact'>
-                Contact
-              </a>
-            </li>
-          </ul>
+          <MenuList>
+            <MenuItem>
+              <MenuLink href='#hero'>Home</MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink href='#projects'>Projects</MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink href='#about'>About</MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink href='#contact'>Contact</MenuLink>
+            </MenuItem>
+          </MenuList>
         ) : (
           ' '
         )}
-      </nav>
+      </Menu>
     </>
   );
 };
