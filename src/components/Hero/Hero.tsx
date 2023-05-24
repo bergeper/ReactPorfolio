@@ -1,12 +1,14 @@
-import './Hero.scss';
-
+import logo from '../../assets/CompPurp.png';
+import { HeroImg } from '../styled/HeroImg';
 export const Hero = () => {
   return (
     <>
-      <section className='hero'>
-        <h1>Something fucking cool here</h1>
-        <section>Bottom nav</section>
-      </section>
+      <article>
+        <h1>Hi, I am</h1>
+        <h1>Per Berge</h1>
+        <h1>Front-End Developer</h1>
+      </article>
+      <HeroImg src={logo}></HeroImg>
     </>
   );
 };
