@@ -1,29 +1,34 @@
 import { About } from '../About/About';
 import { Contact } from '../Contact/Contact';
-import { Hero } from '../Hero/Hero';
+import { Header } from '../styled/Header';
 import { Navigation } from '../Navigation/Navigation';
 import { Projects } from '../Projects/Projects';
-import './Layout.scss';
+import { Footer } from '../styled/Footer';
+import { BottomNav } from '../styled/BottomNav';
+import { StyledSection } from '../styled/StyledSection';
+import { MainContainer } from '../styled/MainContainer';
+import { Hero } from '../Hero/Hero';
 
 export const Layout = () => {
   return (
     <>
-      <header>
+      <Header id='hero'>
         <Navigation></Navigation>
         <Hero></Hero>
-      </header>
-      <main className='main--container'>
-        <section className='content'>
+      </Header>
+      <BottomNav></BottomNav>
+      <MainContainer>
+        <StyledSection id='projects'>
           <Projects></Projects>
-        </section>
-        <section className='content'>
+        </StyledSection>
+        <StyledSection id='about'>
           <About></About>
-        </section>
-        <section className='content'>
+        </StyledSection>
+        <StyledSection id='contact'>
           <Contact></Contact>
-        </section>
-      </main>
-      <footer className='foot'>footer</footer>
+        </StyledSection>
+      </MainContainer>
+      <Footer>Footer</Footer>
     </>
   );
 };
