@@ -1,23 +1,23 @@
 import { About } from '../About/About';
 import { Contact } from '../Contact/Contact';
-import { Header } from '../styled/Header';
+import { StyledHeader } from '../styled/StyledHeader';
 import { Navigation } from '../Navigation/Navigation';
 import { Projects } from '../Projects/Projects';
-import { Footer } from '../styled/Footer';
-import { BottomNav } from '../styled/BottomNav';
+import { StyledFooter } from '../styled/StyledFooter';
 import { StyledSection } from '../styled/StyledSection';
-import { MainContainer } from '../styled/MainContainer';
+import { StyledMain } from '../styled/StyledMain';
 import { Hero } from '../Hero/Hero';
+import { BottomNavigation } from '../Navigation/BottomNavigation';
 
 export const Layout = () => {
   return (
     <>
-      <Header id='hero'>
+      <StyledHeader id='hero'>
         <Navigation></Navigation>
         <Hero></Hero>
-      </Header>
-      <BottomNav></BottomNav>
-      <MainContainer>
+      </StyledHeader>
+      <BottomNavigation></BottomNavigation>
+      <StyledMain>
         <StyledSection id='projects'>
           <Projects></Projects>
         </StyledSection>
@@ -27,8 +27,8 @@ export const Layout = () => {
         <StyledSection id='contact'>
           <Contact></Contact>
         </StyledSection>
-      </MainContainer>
-      <Footer>Footer</Footer>
+      </StyledMain>
+      <StyledFooter>Footer</StyledFooter>
     </>
   );
 };
