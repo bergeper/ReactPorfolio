@@ -1,14 +1,23 @@
 import logo from '../../assets/CompPurp.png';
-import { HeroImg } from '../styled/HeroImg';
+import { HeroDesc } from '../styled/Hero/HeroDesc';
+import { HeroImg } from '../styled/Hero/HeroImg';
+import { HeroImgContainer } from '../styled/Hero/HeroImgContainer';
+import { HeroImgSection } from '../styled/Hero/HeroImgSection';
+import { HeroTitle } from '../styled/Hero/HeroTitle';
+import { HeroTitleSection } from '../styled/Hero/HeroTitleSection';
 export const Hero = () => {
   return (
     <>
-      <article>
-        <h1>Hi, I am</h1>
-        <h1>Per Berge</h1>
-        <h1>Front-End Developer</h1>
-      </article>
-      <HeroImg src={logo}></HeroImg>
+      <HeroTitleSection>
+        <HeroTitle>Hi, I am</HeroTitle>
+        <HeroTitle>Per</HeroTitle>
+        <HeroDesc>Front-End Developer</HeroDesc>
+      </HeroTitleSection>
+      <HeroImgSection>
+        <HeroImgContainer>
+          <HeroImg src={logo}></HeroImg>
+        </HeroImgContainer>
+      </HeroImgSection>
     </>
   );
 };
