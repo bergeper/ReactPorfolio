@@ -4,6 +4,11 @@ import { Menu } from '../styled/Menu/Menu';
 import { MenuList } from '../styled/Menu/MenuList';
 import { MenuItem } from '../styled/Menu/MenuItem';
 import { MenuLink } from '../styled/Menu/MenuLink';
+import { MenuIcon } from '../styled/Menu/MenuIcon';
+import projects from '../../assets/images/logo/projects4.png';
+import home from '../../assets//images/logo/home2.png';
+import contact from '../../assets/images/logo/contact.png';
+import about from '../../assets/images/logo/about.png';
 
 export const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -28,16 +33,28 @@ export const Navigation = () => {
         {toggleMenu ? (
           <MenuList>
             <MenuItem>
-              <MenuLink href='#hero'>Home</MenuLink>
+              <MenuLink href='#hero'>
+                <MenuIcon src={home}></MenuIcon>
+                Home
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#projects'>Projects</MenuLink>
+              <MenuLink href='#projects'>
+                <MenuIcon src={projects}></MenuIcon>
+                Projects
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#about'>About</MenuLink>
+              <MenuLink href='#about'>
+                <MenuIcon src={about}></MenuIcon>
+                About
+              </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#contact'>Contact</MenuLink>
+              <MenuLink href='#contact'>
+                <MenuIcon src={contact}></MenuIcon>
+                Contact
+              </MenuLink>
             </MenuItem>
           </MenuList>
         ) : (
