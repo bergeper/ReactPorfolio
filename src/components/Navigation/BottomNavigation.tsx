@@ -3,27 +3,37 @@ import { StyledNavContainer } from '../styled/NavbarBottom/StyledNavContainer';
 import { StyledNavItem } from '../styled/NavbarBottom/StyledNavItem';
 import { StyledNavLink } from '../styled/NavbarBottom/StyledNavLink';
 import { StyledNavLogo } from '../styled/NavbarBottom/StyledNavLogo';
-
+import projects from '../../assets/images/logo/projects4.png';
+import home from '../../assets/images/logo/home2.png';
+import contact from '../../assets/images/logo/contact.png';
+import about from '../../assets/images/logo/about.png';
 export const BottomNavigation = () => {
   return (
     <>
       <StyledNavContainer>
         <StyledNavBar>
           <StyledNavItem>
-            <StyledNavLogo></StyledNavLogo>
-            <StyledNavLink href='#home'>Home</StyledNavLink>
+            <StyledNavLink href='#home'>
+              <StyledNavLogo src={home}></StyledNavLogo>Home
+            </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLogo></StyledNavLogo>
-            <StyledNavLink href='#projects'>Projects</StyledNavLink>
+            <StyledNavLink href='#projects'>
+              <StyledNavLogo src={projects}></StyledNavLogo>
+              Projects
+            </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLogo></StyledNavLogo>
-            <StyledNavLink href='#about'>About</StyledNavLink>
+            <StyledNavLink href='#about'>
+              <StyledNavLogo src={about}></StyledNavLogo>
+              About
+            </StyledNavLink>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLogo></StyledNavLogo>
-            <StyledNavLink href='#contact'>Contact</StyledNavLink>
+            <StyledNavLink href='#contact'>
+              <StyledNavLogo src={contact}></StyledNavLogo>
+              Contact
+            </StyledNavLink>
           </StyledNavItem>
         </StyledNavBar>
       </StyledNavContainer>
