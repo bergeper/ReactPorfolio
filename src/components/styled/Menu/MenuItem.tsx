@@ -1,14 +1,15 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const MenuItem = styled.li`
   display: flex;
   align-items: center;
-  border: 4px solid #080808;
-  background-color: #849efcff;
-  padding: 5px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 10px;
   margin: 5px;
+  height: 40px;
   list-style-type: none;
   &:hover {
-    background-color: #fded54ff;
+    background-color: #777762;
   }
 `;
