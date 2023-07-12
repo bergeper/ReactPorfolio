@@ -3,5 +3,41 @@ html {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arvo-Regular;
+}
+
+// Arvo
+@font-face {
+  font-family: "Arvo-Regular";
+  src: url("./assets/fonts/Arvo/Arvo-Regular.ttf");
+}
+@font-face {
+  font-family: "Arvo-Italic";
+  src: url("./assets/fonts/Arvo/Arvo-Italic.ttf");
+}
+@font-face {
+  font-family: "Arvo-Bold";
+  src: url("./assets/fonts/Arvo/Arvo-Bold.ttf");
+}
+@font-face {
+  font-family: "Arvo-BoldItalic";
+  src: url("./assets/fonts/Arvo/Arvo-BoldItalic.ttf");
+}
+
+// Andika
+@font-face {
+  font-family: "Andika-Regular";
+  src: url("./assets/fonts/Andika/Andika-Regular.ttf");
+}
+@font-face {
+  font-family: "Andika-Italic";
+  src: url("./assets/fonts/Andika/Andika-Italic.ttf");
+}
+@font-face {
+  font-family: "Andika-Bold";
+  src: url("./assets/fonts/Andika/Andika-Bold.ttf");
+}
+@font-face {
+  font-family: "Andika-BoldItalic";
+  src: url("./assets/fonts/Andika/Andika-BoldItalic.ttf");
 }
