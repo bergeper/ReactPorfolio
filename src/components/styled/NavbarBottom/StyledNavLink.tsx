@@ -13,7 +13,7 @@ export const StyledNavLink = styled.a`
     font-size: 22px;
   }
   &:hover {
-    border: 2px solid white;
-    padding: 3px;
+    background-color: #777762;
+    border-radius: 20px;
   }
 `;
