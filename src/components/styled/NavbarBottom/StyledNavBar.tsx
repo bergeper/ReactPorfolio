@@ -1,10 +1,14 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const StyledNavBar = styled.ul`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
   }
 `;
