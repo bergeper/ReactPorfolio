@@ -1,7 +1,8 @@
 import { styled } from 'styled-components';
 
 export const StyledNavLogo = styled.img`
-  width: 70px;
+  width: auto;
+  height: 60px;
   @media screen and (min-width: 768px) {
   }
 `;

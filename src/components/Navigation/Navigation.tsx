@@ -33,25 +33,25 @@ export const Navigation = () => {
         {toggleMenu ? (
           <MenuList>
             <MenuItem>
-              <MenuLink href='#hero'>
+              <MenuLink href='#hero' onClick={showMenu}>
                 <MenuIcon src={home}></MenuIcon>
                 Home
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#projects'>
+              <MenuLink href='#projects' onClick={showMenu}>
                 <MenuIcon src={projects}></MenuIcon>
                 Projects
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#about'>
+              <MenuLink href='#about' onClick={showMenu}>
                 <MenuIcon src={about}></MenuIcon>
                 About
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink href='#contact'>
+              <MenuLink href='#contact' onClick={showMenu}>
                 <MenuIcon src={contact}></MenuIcon>
                 Contact
               </MenuLink>

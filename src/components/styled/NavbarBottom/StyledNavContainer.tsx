@@ -5,7 +5,9 @@ export const StyledNavContainer = styled.nav`
   @media screen and (min-width: 768px) {
     display: block;
     height: 15vh;
-    background-color: #5deb5dd6;
+    background-color: #849efcff;
     display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `;

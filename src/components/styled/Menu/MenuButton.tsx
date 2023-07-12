@@ -9,6 +9,7 @@ export const MenuButton = styled.button`
   right: 10px;
   border: 3px solid white;
   background-color: #849efcff;
+  cursor: pointer;
   &:hover {
     background-color: #fded54ff;
   }

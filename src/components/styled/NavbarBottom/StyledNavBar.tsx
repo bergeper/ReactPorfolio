@@ -4,7 +4,7 @@ export const StyledNavBar = styled.ul`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 80%;
   }
 `;
