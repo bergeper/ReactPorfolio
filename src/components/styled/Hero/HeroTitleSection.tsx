@@ -1,15 +1,14 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const HeroTitleSection = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  height: 50vh;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
   @media screen and (min-width: 768px) {
-    height: 85vh;
+    padding-top: 60px;
     justify-content: left;
     justify-content: center;
-    width: 50%;
   }
 `;
