@@ -4,7 +4,7 @@ export const StyledNavBar = styled.ul`
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 60%;
   }
