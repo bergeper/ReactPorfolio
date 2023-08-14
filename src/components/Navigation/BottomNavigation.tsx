@@ -1,41 +1,35 @@
 import { StyledNavBar } from "../styled/NavbarBottom/StyledNavBar";
 import { StyledNavContainer } from "../styled/NavbarBottom/StyledNavContainer";
 import { StyledNavItem } from "../styled/NavbarBottom/StyledNavItem";
-import { StyledNavLink } from "../styled/NavbarBottom/StyledNavLink";
 import { StyledNavLogo } from "../styled/NavbarBottom/StyledNavLogo";
 import projects from "../../assets/images/logobw/projects.png";
-import home from "../../assets//images/logobw/home.png";
 import contact2 from "../../assets/images/logobw/contact2.png";
 import about from "../../assets/images/logobw/about.png";
 import { StyledNavItemText } from "../styled/NavbarBottom/StyledNavItemText";
+import { Link } from "react-router-dom";
+import "./BottomNavigation.scss";
 export const BottomNavigation = () => {
   return (
     <>
       <StyledNavContainer>
         <StyledNavBar>
           <StyledNavItem>
-            <StyledNavLink href="#home">
-              <StyledNavLogo src={home}></StyledNavLogo>
-              <StyledNavItemText>Home</StyledNavItemText>
-            </StyledNavLink>
-          </StyledNavItem>
-          <StyledNavItem>
-            <StyledNavLink href="#projects">
+            <Link to="/projects" className="StyledNavLink">
               <StyledNavLogo src={projects}></StyledNavLogo>
               <StyledNavItemText>Projects</StyledNavItemText>
-            </StyledNavLink>
+            </Link>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLink href="#about">
+            <Link to="/about" className="StyledNavLink">
               <StyledNavLogo src={about}></StyledNavLogo>
               <StyledNavItemText>About</StyledNavItemText>
-            </StyledNavLink>
+            </Link>
           </StyledNavItem>
           <StyledNavItem>
-            <StyledNavLink href="#contact">
+            <Link to="/contact" className="StyledNavLink">
               <StyledNavLogo src={contact2}></StyledNavLogo>
               <StyledNavItemText>Contact</StyledNavItemText>
-            </StyledNavLink>
+            </Link>
           </StyledNavItem>
         </StyledNavBar>
       </StyledNavContainer>
