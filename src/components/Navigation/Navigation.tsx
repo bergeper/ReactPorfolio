@@ -3,7 +3,6 @@ import { MenuButton } from "../styled/Menu/MenuButton";
 import { Menu } from "../styled/Menu/Menu";
 import { MenuList } from "../styled/Menu/MenuList";
 import { MenuItem } from "../styled/Menu/MenuItem";
-import { MenuLink } from "../styled/Menu/MenuLink";
 import { MenuIcon } from "../styled/Menu/MenuIcon";
 import projects from "../../assets/images/logobw/projects.png";
 import home from "../../assets//images/logobw/home.png";
@@ -11,6 +10,8 @@ import contact from "../../assets/images/logobw/contact.png";
 import about from "../../assets/images/logobw/about.png";
 import { Slide } from "react-awesome-reveal";
 import { MenuItemText } from "../styled/Menu/MenuItemText";
+import { Link } from "react-router-dom";
+import "./Navigation.scss";
 
 export const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -36,28 +37,28 @@ export const Navigation = () => {
           <Slide direction="right">
             <MenuList>
               <MenuItem>
-                <MenuLink href="#hero" onClick={showMenu}>
+                <Link to="/" onClick={showMenu} className="MenuLink">
                   <MenuItemText>Home</MenuItemText>
                   <MenuIcon src={home}></MenuIcon>
-                </MenuLink>
+                </Link>
               </MenuItem>
               <MenuItem>
-                <MenuLink href="#projects" onClick={showMenu}>
+                <Link to="/projects" onClick={showMenu} className="MenuLink">
                   <MenuItemText>Projects</MenuItemText>
                   <MenuIcon src={projects}></MenuIcon>
-                </MenuLink>
+                </Link>
               </MenuItem>
               <MenuItem>
-                <MenuLink href="#about" onClick={showMenu}>
+                <Link to="/about" onClick={showMenu} className="MenuLink">
                   <MenuItemText>About</MenuItemText>
                   <MenuIcon src={about}></MenuIcon>
-                </MenuLink>
+                </Link>
               </MenuItem>
               <MenuItem>
-                <MenuLink href="#contact" onClick={showMenu}>
+                <Link to="/contact" onClick={showMenu} className="MenuLink">
                   <MenuItemText>Contact</MenuItemText>
                   <MenuIcon src={contact}></MenuIcon>
-                </MenuLink>
+                </Link>
               </MenuItem>
             </MenuList>
           </Slide>
