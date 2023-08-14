@@ -1,3 +1,7 @@
 export const Projects = () => {
-  return <>Projects work;</>;
+  return (
+    <>
+      <h2>Projects work</h2>
+    </>
+  );
 };
