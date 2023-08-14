@@ -10,6 +10,7 @@ import home from "../../assets//images/logobw/home.png";
 import contact from "../../assets/images/logobw/contact.png";
 import about from "../../assets/images/logobw/about.png";
 import { Slide } from "react-awesome-reveal";
+import { MenuItemText } from "../styled/Menu/MenuItemText";
 
 export const Navigation = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -36,26 +37,26 @@ export const Navigation = () => {
             <MenuList>
               <MenuItem>
                 <MenuLink href="#hero" onClick={showMenu}>
+                  <MenuItemText>Home</MenuItemText>
                   <MenuIcon src={home}></MenuIcon>
-                  Home
                 </MenuLink>
               </MenuItem>
               <MenuItem>
                 <MenuLink href="#projects" onClick={showMenu}>
+                  <MenuItemText>Projects</MenuItemText>
                   <MenuIcon src={projects}></MenuIcon>
-                  Projects
                 </MenuLink>
               </MenuItem>
               <MenuItem>
                 <MenuLink href="#about" onClick={showMenu}>
+                  <MenuItemText>About</MenuItemText>
                   <MenuIcon src={about}></MenuIcon>
-                  About
                 </MenuLink>
               </MenuItem>
               <MenuItem>
                 <MenuLink href="#contact" onClick={showMenu}>
+                  <MenuItemText>Contact</MenuItemText>
                   <MenuIcon src={contact}></MenuIcon>
-                  Contact
                 </MenuLink>
               </MenuItem>
             </MenuList>

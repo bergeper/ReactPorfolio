@@ -10,8 +10,7 @@ export const MenuButton = styled.button`
   border: 2px solid black;
   border-radius: 20px;
   background-color: black;
-  // color: #fde9aa;
-  color: white;
+  color: #f5ead6;
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }
