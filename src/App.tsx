@@ -1,9 +1,10 @@
-import { Layout } from './components/Layout/Layout';
-import './App.scss';
+import "./App.scss";
+import { router } from "./Router";
+import { RouterProvider } from "react-router-dom";
 function App() {
   return (
     <>
-      <Layout></Layout>
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
