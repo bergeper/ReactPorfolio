@@ -1,13 +1,14 @@
 import { styled } from "styled-components";
 
 export const MenuButton = styled.button`
+  z-index: 10;
   position: fixed;
   padding: 10px;
   margin: 5px;
   font-size: 16px;
   top: 10px;
   right: 10px;
-  border: 2px solid black;
+  border: 2px solid #777762;
   border-radius: 20px;
   background-color: black;
   color: #f5ead6;
