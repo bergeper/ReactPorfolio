@@ -1,6 +1,17 @@
 import { styled } from "styled-components";
 
 export const StyledDividerTopRight = styled.div`
+  &:before {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    border-radius: 100rem 0 0 0;
+    background-color: #777762;
+  }
   @media screen and (min-width: 768px) {
     &:before {
       position: absolute;

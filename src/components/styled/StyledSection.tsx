@@ -6,4 +6,5 @@ export const StyledSection = styled.section`
   align-items: center;
   position: relative;
   min-height: 100vh;
+  width: 100%;
 `;
