@@ -5,8 +5,8 @@ export const StyledHeader = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
   @media screen and (min-width: 768px) {
+    flex-direction: row;
     height: 85vh;
   }
 `;

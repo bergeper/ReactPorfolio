@@ -4,7 +4,7 @@ import { Project } from "./components/pages/Project/Project";
 import { Projects } from "./components/pages/Projects/Projects";
 import { About } from "./components/pages/About/About";
 import { Contact } from "./components/pages/Contact/Contact";
-import { Home } from "./components/pages/Home/Home";
+import { Hero } from "./components/pages/Hero/Hero";
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Hero></Hero>,
         index: true,
       },
       {
