@@ -26,11 +26,11 @@ export const Navigation = () => {
       setToggleMenu(true);
     }
   };
-  /*
-const handleClick = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-};
-*/
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    showMenu();
+  };
 
   return (
     <>
@@ -42,25 +42,25 @@ const handleClick = () => {
           <Slide direction="right">
             <MenuList>
               <MenuItem>
-                <Link to="/" onClick={showMenu} className="MenuLink">
+                <Link to="/" onClick={handleClick} className="MenuLink">
                   <MenuItemText>Home</MenuItemText>
                   <MenuIcon src={home}></MenuIcon>
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/projects" onClick={showMenu} className="MenuLink">
+                <Link to="/projects" onClick={handleClick} className="MenuLink">
                   <MenuItemText>Projects</MenuItemText>
                   <MenuIcon src={projects}></MenuIcon>
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/about" onClick={showMenu} className="MenuLink">
+                <Link to="/about" onClick={handleClick} className="MenuLink">
                   <MenuItemText>About</MenuItemText>
                   <MenuIcon src={about}></MenuIcon>
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="/contact" onClick={showMenu} className="MenuLink">
+                <Link to="/contact" onClick={handleClick} className="MenuLink">
                   <MenuItemText>Contact</MenuItemText>
                   <MenuIcon src={contact}></MenuIcon>
                 </Link>
