@@ -7,4 +7,5 @@ export const StyledSection = styled.section`
   position: relative;
   min-height: 100vh;
   width: 100%;
+  margin: 100px 0 100px 0;
 `;
