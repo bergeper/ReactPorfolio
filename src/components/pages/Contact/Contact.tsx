@@ -1,3 +1,15 @@
+import { StyledPageHeading } from "../../styled/StyledPageHeading";
+import { StyledPageHeadingDiv } from "../../styled/StyledPageHeadingDiv";
+import { StyledPageHeadingSection } from "../../styled/StyledPageHeadingSection";
+
 export const Contact = () => {
-  return <>Contact works</>;
+  return (
+    <>
+      <StyledPageHeadingSection>
+        <StyledPageHeadingDiv>
+          <StyledPageHeading>Contact</StyledPageHeading>
+        </StyledPageHeadingDiv>
+      </StyledPageHeadingSection>
+    </>
+  );
 };
